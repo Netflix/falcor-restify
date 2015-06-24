@@ -1,0 +1,30 @@
+{
+  "name": "falcor-restify",
+  "version": "1.0.0",
+  "description": "A falcor server for restify.",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/yunong/falcor-restify",
+  "author": {
+    "name": "yunong",
+    "url": "https://github.com/yunong/falcor-restify/authors.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yunong/falcor-restify.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "scripts": {
+    "lint": "node ./node_modules/.bin/eslint src/"
+  },
+  "dependencies": {
+    "restify": "3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^0.21.0"
+  }
+}
