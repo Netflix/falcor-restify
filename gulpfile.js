@@ -9,12 +9,12 @@ gulp.task('test', function (cb) {
 });
 
 gulp.task('lint', [
-  'lint-src',
-  'lint-test'
+  'lint-lib',
+  // 'lint-test'
 ]);
 
-gulp.task('lint-src', function () {
-  return gulp.src('src/*.js')
+gulp.task('lint-lib', function () {
+  return gulp.src('lib/*.js')
     .pipe(eslint({
       globals: {
         'require': false,
