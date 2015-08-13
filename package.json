@@ -19,12 +19,15 @@
     }
   ],
   "scripts": {
-    "lint": "node ./node_modules/.bin/eslint src/"
+    "lint": "gulp lint"
   },
   "dependencies": {
     "restify": "3.0.3"
   },
   "devDependencies": {
-    "eslint": "^0.21.0"
+    "eslint": "^0.21.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3"
   }
 }
