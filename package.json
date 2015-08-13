@@ -19,7 +19,8 @@
     }
   ],
   "scripts": {
-    "lint": "gulp lint"
+    "lint": "gulp lint",
+    "test": "gulp test"
   },
   "dependencies": {
     "restify": "3.0.3"
