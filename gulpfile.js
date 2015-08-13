@@ -33,7 +33,8 @@ gulp.task('lint-test', function () {
         'require': false,
         'module': false,
         'it': false,
-        'describe': false
+        'describe': false,
+        'afterEach': false
       },
       reset: true,
       rules: {

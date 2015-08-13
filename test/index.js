@@ -23,7 +23,7 @@ describe('falcor-restify', function () {
 	// Set up basic router and immediately invoke the returned funciton
 	// with fake req and res objects to check on stubbed functions
 	function callFalcorRestify(req, res) {
-		return falcorRestify(function (req, res) {
+		return falcorRestify(function () {
 			return new Router([{
 				route: 'route',
 				get: function (pathSet) {
@@ -31,7 +31,7 @@ describe('falcor-restify', function () {
 				}
 			}]);
 		})(req, res, sinon.stub());
-	};
+	}
 
 	afterEach(function () {
 		fakeReq.log.debug.reset();
