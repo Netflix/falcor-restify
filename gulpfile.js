@@ -10,7 +10,7 @@ gulp.task('test', function (cb) {
 
 gulp.task('lint', [
   'lint-lib',
-  // 'lint-test'
+  'lint-test'
 ]);
 
 gulp.task('lint-lib', function () {
