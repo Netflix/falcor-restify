@@ -2,8 +2,6 @@
 
 Restify Middleware for Hosting Falcor Data Sources.
 
-Working usage example of the basic repro in example/
-
 ## Usage
 
 Minimalistic example
@@ -12,7 +10,7 @@ Minimalistic example
 'use strict';
 
 var bunyan = require('bunyan');
-var mwFactory = require('falcor-restify');
+var restifyMiddleware = require('falcor-restify');
 var restify = require('restify');
 var falcor = require('falcor');
 var rx = require('rx');
@@ -70,7 +68,7 @@ server.on('uncaughtException', function (req, res, route, err) {
 });
 
 // Create a JSON Graph object using a Falcor Model
-server.get('/model.json', mwFactory.restifyMiddleware(function (req, res, next) {
+server.get('/model.json', restifyMiddleware(function (req, res, next) {
     return new falcor.Model({
         cache: {
             greeting: "Hello World"
