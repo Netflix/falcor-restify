@@ -1,12 +1,12 @@
 # falcor-restify
 
-Restify Middleware for Hosting Falcor Data Sources.
+> [Restify](https://github.com/restify/node-restify) Middleware for Hosting Falcor Data Sources.
 
 ## Usage
 
 Minimalistic example
 
-```
+```js
 'use strict';
 
 var bunyan = require('bunyan');
